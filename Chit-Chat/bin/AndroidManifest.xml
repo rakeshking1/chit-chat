@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.devrakesh.chit_chat">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="18"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.devrakesh.chit_chat.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.radar.ScringoRadarActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feed.ScringoFeedActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoFollowersActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoInboxActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoChatActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoInviteActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.twitter.ScringoTwitterActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoFindFriendsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feedback.ScringoFeedbackActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoSendToActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileBridge"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoProfileEditBio"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.feedback.ScringoFeedbackRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.inbox.ScringoSystemMessageActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoFindFriendsRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.invite.ScringoSuggestionsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.apps.ScringoAppDiscoveryActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.chatroom.ScringoChatroomActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.chatroom.ScringoTopicActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoLoginRootActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoLoginActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoSignUpSettingsActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoForgotPasswordActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoChangePasswordActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizzesActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizIntroActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoQuizStoreActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.menu.ScringoMenuActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.profile.ScringoMyProfileActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.scores.ScringoScoresActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.quiz.ScringoSuggestQuestionActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoStickerStoreActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoStickerPackActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.keyboard.ScringoPhotoActivity"/>
+		<activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.scringo.features.ScringoWebViewActivity"/>
+        <activity android:configChanges="orientation|keyboardHidden|screenSize" android:name="com.facebook.LoginActivity"/>
+        
+        <service android:name="com.scringo.service.ScringoService"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/replace_this_facebook_app_id"/>
+    </application>
+
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+</manifest>
