@@ -34,6 +34,7 @@ public class LoginActivity extends Activity {
 		scringo=new Scringo(LoginActivity.this);
 		
 		scringo.init();
+		scringo.addSidebar();
 		
 		initVars();
 		
